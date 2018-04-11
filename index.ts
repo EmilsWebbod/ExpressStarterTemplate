@@ -5,6 +5,9 @@ require('rxjs/Rx');
 
 const express = require('express');
 const app = express();
+const test = require('@ewb/ewb-npm-starter');
+
+console.log('Testing', test(1));
 
 /** Render engine and SSR */
 require('./init/render')(app);
